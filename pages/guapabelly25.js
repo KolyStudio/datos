@@ -43,7 +43,7 @@ export default function Home() {
       </Head>
 
       <main className='lg:w-4/12 lg:m-auto'>
-<h1 className="hidden">{prenom}</h1>
+      <h1 className="hidden">{prenom} - Page Privée</h1>
 <div className="hidden">	Accéder à la page privée de {prenom} pour consulter sa présentation et ses photos. {prenom} répond généralement aux messages privés en moins d'une heure."
 </div>
 
