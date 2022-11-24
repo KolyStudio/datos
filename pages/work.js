@@ -78,7 +78,7 @@ export default function Home() {
         
         <div className="m-2 rounded-xl pt-2 h-[150px] relative bg-cover bg-banner bg-center backdrop-blur">
           <div className='flex justify-center  absolute w-full'>
-        <img src="logo.webp" className="w-[120px] " /></div>
+        <img src="logo.webp" className="w-[140px] " /></div>
           <div className="flex justify-center  absolute -bottom-5 right-5 ">
             <div className=" fade-inn rounded-xl  text-white bg-[#09BC8A] border-[4px] border-[#15161a] px-3 py-1 text-center text-xs font-semibold uppercase">
               EN LIGNE
@@ -139,7 +139,7 @@ export default function Home() {
         <div className="w-[90%] bg-white m-auto rounded-2xl my-4 shadow-xl">
           <img
             alt={prenom}
-            src={`../proof/missbelly.webp`}
+            src={`../proof/direct/` + `${prenom}` + `.webp`}
             className="rounded-2xl"
           />
         </div>
