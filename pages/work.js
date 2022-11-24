@@ -139,7 +139,7 @@ export default function Home() {
         <div className="w-[90%] bg-white m-auto rounded-2xl my-4 shadow-xl">
           <img
             alt={prenom}
-            src={`../proof/direct/` + `${prenom}` + `.webp`}
+            src={`/proof/direct/` + `${prenom}` + `.webp`}
             className="rounded-2xl"
           />
         </div>
