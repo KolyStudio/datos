@@ -1,20 +1,33 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import React,{ useState, useEffect } from 'react'
+import React,{ useState, useEffect, Fragment } from 'react'
 import styles from '../styles/Home.module.css'
 import dayjs from 'dayjs';
 
 export default function Home() {
-  const [monip, setmonIp] = useState()
-  const date = dayjs().format('DD/MM/YYYY');
-  const prenom = 'Sassoubella06'
 
+  const [monip, setmonIp] = useState()
+  const [showme, setShowme] = useState(false)
+  const date = dayjs().format('DD/MM/YYYY');
+  const prenom = "Sassoubella06";
+  const proof = prenom.toLowerCase();
+  const titre = `${prenom} - Page Privée`;
+  function show() {
+    setShowme(true);
+  }
+
+  function close() {
+    setShowme(false);
+  }
+  
   const link =
 	`https://k.schnell-treffen.com/?abc=2ab0b5837e6c2796&xa=n&acme=wid.90642&media=social&tpls=9&v=sexy&userAge=22&userPhotos=53&userPicture=https://i.ibb.co/jWCZ7cp/profil.webp&s1=CASH&s2=` +
 	date +
 	`&userDistance=7&userName=MISSBELLY`;
 
   async function getData() {
+    
+    
     const resulta = await fetch('https://ipinfo.io/?token=cb83f69067b70b').then(
       (r) => r.json()
     );
@@ -34,158 +47,310 @@ export default function Home() {
   return (
     <>
       <Head>
-      <title>{prenom} - Page Privée</title>
-	    <meta name="description" content={`Accéder à la page privée de ${prenom} pour consulter sa présentation et ses photos. ${prenom} répond généralement aux messages privés en moins d'une heure.`}/>
-      <meta name="og:description" content={`Accéder à la page privée de ${prenom} pour consulter sa présentation et ses photos. ${prenom} répond généralement aux messages privés en moins d'une heure.`}/>
-	    <meta name="twitter:description" content={`Accéder à la page privée de ${prenom} pour consulter sa présentation et ses photos. ${prenom} répond généralement aux messages privés en moins d'une heure.`}/>
-      <link rel="icon" href="favicon.png" />
-	    <meta property="og:image" content="https://i.ibb.co/Yfgbf2J/favicon.png"></meta>
+        <title>{titre}</title>
+        <script
+          async
+          src="https://c.opfourpro.com/8/js/script.js?id=pGJdt"
+        ></script>
+        <meta
+          name="description"
+          content={`Accéder à la page privée de ${prenom} pour consulter sa présentation et ses photos. ${prenom} répond généralement aux messages privés en moins d'une heure.`}
+        />
+        <meta
+          name="og:description"
+          content={`Accéder à la page privée de ${prenom} pour consulter sa présentation et ses photos. ${prenom} répond généralement aux messages privés en moins d'une heure.`}
+        />
+        <meta
+          name="twitter:description"
+          content={`Accéder à la page privée de ${prenom} pour consulter sa présentation et ses photos. ${prenom} répond généralement aux messages privés en moins d'une heure.`}
+        />
+        <link rel="icon" href="favicon.png" />
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/Yfgbf2J/favicon.png"
+        ></meta>
       </Head>
 
-      <main className='lg:w-4/12 lg:m-auto'>
-      <h1 className="hidden">{prenom} - Page Privée</h1>
-<div className="hidden">	Accéder à la page privée de {prenom} pour consulter sa présentation et ses photos. {prenom} répond généralement aux messages privés en moins d'une heure."
-</div>
+      <h1 className="hidden">{prenom}</h1>
+      <div className="hidden">
+        Accéder à la page privée de {prenom} pour consulter sa présentation et
+        ses photos. {prenom} répond généralement aux messages privés en moins
+        d'une heure.
+      </div>
+      <div className="relative lg:w-5/12 lg:m-auto">
+        <div className="m-2 rounded-xl pt-2 h-[150px] relative bg-cover bg-banner bg-center backdrop-blur">
+          <div className="flex justify-center  absolute w-full">
+            <img src="logo.webp" className="w-[140px] " />
+          </div>
+          <div className="flex justify-center  absolute -bottom-5 right-5 ">
+            <div className=" fade-inn rounded-xl  text-white bg-[#09BC8A] border-[4px] border-[#15161a] px-3 py-1 text-center text-xs font-semibold uppercase">
+              EN LIGNE
+            </div>
+          </div>
+        </div>
 
+        <div className="flex  -mt-20 relative w-[125px]  ml-5 border-[5px]  border-[#15161a] rounded-full">
+          <img
+            src="/profil.webp"
+            alt={prenom}
+            className="rounded-full w-[120px] h-[120px] shadow-2xl"
+          />
+          <div className="h-6 w-6 rounded-full border-[4px] border-[#15161a] bg-[#09BC8A] absolute bottom-0 right-2"></div>
+        </div>
 
-      <div className="flex justify-center absolute right-0 left-0 top-[10px]">
-<div className="tracking-[2px] text-white fade-inn rounded-lg  bg-[#09BC8A]  px-3 py-1 text-center text-xs font-semibold uppercase">
-EN LIGNE
-</div>
-</div>
-        <video
-          className="m-auto rounded-[20px] w-[80%] mt-5"
-          controls
-          poster="/poster.webp"
-          src="/proof.mp4"
-          type="video/mp4"
-        ></video>
+        <div className="flex space-x-2 items-center justify-between  mx-4 mt-2">
+          <div className="flex  items-center space-x-2">
+            <h3 className=" text-white font-semibold text-xl text-center">
+              Saraah 🍒
+            </h3>
+            <img alt={prenom} src="/icons/verified.webp" className=" w-5 h-5" />
+          </div>
+        </div>
 
-        <div className="w-[95%] m-auto p-3 py-0 rounded-3xl  text-center  my-4">
-          <p className="py-2 font-medium text-lg">
-            À la recherche d'un soumis {monip} pour m'amuser un peu ! 😈
-            <br></br>
-            <br></br>Si tu es prêt à obéir à tous mes désirs inscris toi ici et
-            envoie moi un message
-            <br></br>
-            👇👇👇
+        <h3 className=" text-gray-400  ml-4">@{prenom}</h3>
+
+        <div className="flex space-x-2 ml-3 pt-2 uppercase text-[#d6dce8]">
+          <div className="  font-semibold rounded-[5px] px-2 text-sm">
+            🎂 20 ans
+          </div>
+          <div className=" font-semibold rounded-[5px] px-2 text-sm">
+            📍 À 9 km
+          </div>
+          <div className="font-semibold rounded-[5px] px-2 text-sm">
+            🍑 Libertine
+          </div>
+        </div>
+
+        <div className="text-[#e6e6fa]  w-[90%] m-auto text-sm my-4">
+          Coucou je m'appelle <b>Sarah, j'ai 22 ans.</b> Je suis passionnée de{" "}
+          <b>fitness et de danse.</b> <br></br>
+          <br></br> Je suis à la recherche de mecs discrets pour{" "}
+          <b>des plans cul réguliers.</b> J'ai un appartement depuis peu, et{" "}
+          <b>j'ai très envie de m'amuser.</b> <br></br>
+          <br></br> Si tu es <b>intéressé,</b> envoie-moi un message et{" "}
+          <b>on s'organise une soirée dans la semaine.</b>
+        </div>
+
+        <div
+          onClick={show}
+          className="  bg-gradient-to-r  from-[#2699f7] to-[#2699f7]  text-white text-lg font-medium py-4 w-[90%] m-auto flex items-center justify-center rounded-2xl my-2 space-x-4"
+        >
+          <img alt={prenom} src="/icons/chat.webp" className="w-8" />
+          <div>{` ENVOIE-MOI UN MESSAGE `}</div>
+        </div>
+
+        <div className="w-[90%] bg-white m-auto rounded-2xl my-4 shadow-xl">
+          <img
+            alt={prenom}
+            src={`/proof/direct/` + `${proof}` + `.webp`}
+            className="rounded-2xl"
+          />
+        </div>
+
+        <div className="w-[95%] m-auto p-3 rounded-3xl my-4">
+          <h2 className="font-semibold text-white">
+            JE NE SUIS PAS UNE ESCORTE !! ❌
+          </h2>
+          <p className="py-2 text-[#e6e6fa] text-sm">
+            Une bonne fois pour toutes, je ne demande <b>pas d'argent,</b> je
+            cherche juste des plans culs pour m'amuser un peu, c'est tout.
+            <br />
+            <br />
+            Je préfère généralement les mecs avec <b>
+              un peu d'expérience
+            </b>{" "}
+            mais si tu es puceau, je vais voir ce que je peux faire... 😉
+            <br />
+            <br /> Par contre les mecs,{" "}
+            <b>respect et discrétion obligatoire SVP,</b> sinon je bloque car
+            c'est pas ce que je recherche.
           </p>
         </div>
 
-        <a
-          href={link}
-          className="text-white shake mt-4 bg-gradient-to-r  from-[#800048] to-[#982c69]  border-b-4 border-[#612045]  text-lg font-medium py-5 w-[90%] m-auto flex items-center justify-center rounded-3xl my-2 space-x-4"
-        >
-          {`>> JE M'ENGAGE À OBÉIR <<`}
-        </a>
-
-        <div className="py-4">
-          <div className="w-[90%] bg-white m-auto rounded-3xl my-4 shadow-xl">
-          <img alt={prenom} src="proof/missbelly.webp" className="rounded-3xl" />
-          </div>
-          <div className="font-medium text-center text-sm w-[90%] m-auto">
-            A savoir, si je montre pas mon visage dans la vidéo c'est que je
-            l'ai un peu retouché pour pas trop être reconnue, j'ai un boulot et
-            une famille donc je pense que vous comprendrez pourquoi... ^^
-          </div>
-        </div>
-
-        <div className="w-[95%] m-auto p-3 rounded-3xl my-4 ">
-          <h2 className="font-semibold text-[#800048] uppercase">
-            Je recherche un mec soumis
+        <div className="w-[95%] m-auto p-3 rounded-3xl my-4 mt-2 ">
+          <h2 className="font-semibold text-white">
+            COMMENT ME RENCONTRER EN RÉEL ?
           </h2>
-          <p className="font-medium py-2 text-sm leading-6">
-            Je suis une dominatrice et je cherche mon tout premier soumis
-            personnel. <br></br><br></br>Tu peux quitter cette page si ce n'est pas ton truc, mais
-            si tu restes, il va falloir m'obéir jusqu'au bout. 😇 Je ne demande
-            pas d'argent mais le site sur lequel je suis fonctionne par
-            abonnement, du coup je conseille généralement de prendre l'offre
-            d'essai à 2 euros ça permet d'avoir accès à tout sans payer plus.<br></br><br></br>
-            Mais si tu es un vrai soumis ça ne devrait pas te poser problème de
-            toute façon... 😘
+          <p className="py-2 text-[#e6e6fa] text-sm">
+            Envoie-moi une petite photo sur{" "}
+            <span className="text-blue-600 font-medium underline underline-offset-2">
+              <a href="#" onClick={show}>
+                MyClub en cliquant ici
+              </a>
+            </span>{" "}
+            et <b>dis-moi quand t'es dispo.</b> Je reçois les notifs quand j'ai
+            un message, donc habituellement,
+            <b> je répond en quelques minutes.</b>
+            <br />
+            <br />
+            Je préviens l'essai coûte quelque chose comme 1 ou 2 euros mais
+            ensuite t'es tranquille tu peux contacter
+            <b> autant de filles que tu veux.</b>
+            <br />
+            <br />
+            Et au moins, je ne me fais pas harceler comme sur Tinder, Badoo ou
+            Snap,
+            <b> ça me permet de te parler sans me faire spammer</b> par des
+            miliers des gros relous. 😘
           </p>
         </div>
 
-        <div className="w-[95%]  m-auto p-3 rounded-3xl my-4 mt-2 ">
-          <h2 className="font-semibold text-o uppercase text-[#800048]">
-            Pour ceux qui veulent des plans culs
-          </h2>
-          <p className="font-medium py-2 text-sm leading-6">
-            Perso j'ai pas mal utilisé JM Date pour trouver des plans culs par
-            le passé et je sais que y'a plein de filles qui font pareil mais qui
-            attendent encore des propositions.<br></br>
-            <br></br> Si être soumis n'est pas ton truc n'hésite pas à m'envoyer
-            un petit message quand même je pourrai te conseiller 2-3 filles qui
-            cherchent des mecs pour s'amuser un peu. 😉
-          </p>
-        </div>
-
-        <a
-          href={link}
-          className="text-white shake mt-4 bg-gradient-to-r  from-[#800048] to-[#982c69]  border-b-4 border-[#612045]  text-lg font-medium py-5 w-[90%] m-auto flex items-center justify-center rounded-3xl my-2 space-x-4"
+        <div
+          onClick={show}
+          className="bg-gradient-to-r  from-[#2699f7] to-[#2699f7]  text-white text-lg font-medium py-4 w-[90%] m-auto flex items-center justify-center rounded-2xl my-2 space-x-4"
         >
-          CLIQUE ICI POUR VOIR MON PROFIL
-        </a>
-
-        <div className="w-[95%] m-auto p-3 rounded-3xl mt-6">
-          <h2 className="font-semibold text-center text-[#800048]">
-            QUELQUES TÉMOIGNAGES
-          </h2>
+          <img alt={prenom} src="/icons/chat.webp" className="w-8" />
+          <div>{` ENVOIE-MOI UN MESSAGE `}</div>
         </div>
 
-        <div className="py-3">
-          <div className="w-[85%] bg-white m-auto p-3 rounded-3xl my-2 ">
-            <img alt={prenom} src="reviews/rev1.webp" />
+        <div onClick={show} className="flex justify-center mt-4">
+          <div className="bg-[#181818] font-semibold text-white py-3 px-2 w-[50%] text-center border-b-4 border-[#2699f7] flex items-center space-x-2 justify-center">
+            <img
+              alt={prenom}
+              src="/icons/photo.webp"
+              className="w-4 -mt-[2px]"
+            />
+            <p>169 nudes</p>{" "}
           </div>
-          <div className="text-center m-auto w-[90%] font-medium ">
-            Vous êtes nombreux à avoir pris l'offre d'essai et à en être
-            contents apparements ! 😘
-          </div>
-        </div>
-
-        <div className="py-3">
-          <div className="w-[85%] bg-white m-auto p-3 rounded-3xl my-2 ">
-            <img alt={prenom} src="reviews/rev2.webp" />
-          </div>
-
-          <div className="text-center m-auto w-[90%] font-medium ">
-            Pour ceux qui sont sceptiques, testez au moins avec l'offre d'essai,
-            vous verrez que ça fonctionne vraiment ! 💯🔥
+          <div className="bg-[#181818] font-semibold text-white py-3 px-2 w-[50%] text-center flex items-center space-x-2 justify-center">
+            <img
+              alt={prenom}
+              src="/icons/video.webp"
+              className="w-4 -mt-[2px]"
+            />
+            <p>56 vidéos</p>{" "}
           </div>
         </div>
 
-        <div className="py-3">
-          <div className="w-[85%] bg-white m-auto p-3 rounded-3xl my-2">
-            <img alt={prenom} src="reviews/rev3.webp" />
+        <div onClick={show} className="bg-[#1b1b1b] pt-2 px-2">
+          <div className="flex space-x-1 px-1">
+            <div className="relative m-auto">
+              <img
+                src="/previews/c1.webp"
+                alt={prenom}
+                className="rounded-2xl shadow-2xl"
+              />
+            </div>
+            <div className=" relative m-auto">
+              <img
+                src="/icons/cadenas.svg"
+                className="absolute w-8 shadow-2xl right-[25%] left-[25%] m-auto top-[25%] bottom-[25%]"
+                alt={prenom}
+              />
+              <img
+                src="/previews/p2.webp"
+                alt={prenom}
+                className="rounded-2xl shadow-2xl"
+              />
+            </div>
           </div>
-          <div className="text-center m-auto w-[90%] font-medium ">
-            Ce ne sont pas des escortes, vous pouvez contacter autant de filles
-            que vous voulez. 👌
+
+          <div className="flex space-x-1 px-1 py-1">
+            <div className="relative m-auto">
+              <img
+                src="/icons/cadenas.svg"
+                className="absolute w-8 shadow-2xl right-[25%] left-[25%] m-auto top-[25%] bottom-[25%]"
+                alt={prenom}
+              />
+              <img
+                src="/previews/p3.webp"
+                alt={prenom}
+                className="rounded-2xl  shadow-2xl"
+              />
+            </div>
+            <div className="relative m-auto">
+              <img
+                src="/icons/cadenas.svg"
+                className="absolute w-8 shadow-2xl right-[25%] left-[25%] m-auto top-[25%] bottom-[25%]"
+                alt={prenom}
+              />
+
+              <img
+                src="/previews/p4.webp"
+                alt={prenom}
+                className="rounded-2xl shadow-2xl"
+              />
+            </div>
+          </div>
+
+          <div className="flex space-x-1 px-1 ">
+            <div className=" relative m-auto">
+              <img
+                src="/previews/c2.webp"
+                alt={prenom}
+                className="rounded-2xl shadow-2xl"
+              />
+            </div>
+            <div className="relative m-auto">
+              <img
+                src="/icons/cadenas.svg"
+                className="absolute w-8 shadow-2xl right-[25%] left-[25%] m-auto top-[25%] bottom-[25%]"
+                alt={prenom}
+              />
+              <img
+                src="/previews/p5.webp"
+                alt={prenom}
+                className=" rounded-2xl shadow-2xl"
+              />
+            </div>
+          </div>
+
+          <div className="flex space-x-1 px-1 pt-1">
+            <div className="relative m-aut">
+              <img
+                src="/icons/cadenas.svg"
+                className="absolute w-8 shadow-2xl right-[25%] left-[25%] m-auto top-[25%] bottom-[25%]"
+                alt={prenom}
+              />
+              <img
+                src="/previews/p1.webp"
+                alt={prenom}
+                className="rounded-2xl shadow-2xl"
+              />
+            </div>
+            <div className=" relative m-auto">
+              <img
+                src="/icons/cadenas.svg"
+                className="absolute w-8 shadow-2xl right-[25%] left-[25%] m-auto top-[25%] bottom-[25%]"
+                alt={prenom}
+              />
+              <img
+                src="/previews/p5.webp"
+                alt={prenom}
+                className="rounded-2xl shadow-2xl"
+              />
+            </div>
           </div>
         </div>
-      </main>
 
-      <footer className='lg:w-4/12 lg:m-auto'>
-        <div className="w-[90%] m-auto text-center">
-          <div className="text-[#800048] text-center text-xl font-medium my-2">
-            Tu veux nous rejoindre ?
-          </div>
-          <div>
-            Super, tu ne le regretteras pas ! 🔥<br></br>
-            <br></br>
-            Et si tu doutes encore tu peux tester quelques jours avec l'offre
-            d'essai ! Il te suffit de cliquer sur le bouton ci-dessous, de
-            t'inscrire en une minute puis de choisir une offre !<br></br>👇👇👇
+        <div className={`${showme ? "show" : "noshow"}`}>
+          <div className="backdrop-brightness-[.15] fixed top-0 h-full w-full text-white ">
+           
+            <div className="relative flex justify-center items-center h-screen w-screen">
+              <div className="fixed bg-[#1b1c21] w-[95%] m-auto h-[auto] rounded-xl relative">
+                <div className='absolute -mt-20 w-full flex justify-center'>
+                  <img alt="close" src="icons/close.webp" className="w-12 m-auto" onClick={close} />
+                  </div>
+                <div className="flex  space-x-2 px-1 justify-center mt-2 items-center">
+                  <div className="flex justify-center items-center my-2 relative w-[200px] m-auto">
+                    <img
+                      src="/profil.webp"
+                      alt={prenom}
+                      className="rounded-[50px]  w-[170px]"
+                    />
+                    <div className="h-6 w-6 rounded-full border-[4px] border-[#1b1c21] bg-[#09BC8A] absolute bottom-0 right-0"></div>
+                  </div>
+                  <div className="text-[white] font-medium">
+                    Afin de ne parler qu'à des majeurs, {prenom} ne souhaite
+                    parler qu'aux hommes inscrits.{" "}
+                  </div>
+                </div>
+                <div id="form"></div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <a
-          href={link}
-          className="text-white shake mt-4 bg-gradient-to-r  from-[#800048] to-[#982c69]  border-b-4 border-[#612045]  text-lg font-medium py-5 w-[90%] m-auto flex items-center justify-center rounded-3xl my-2 space-x-4"
-        >
-          S'INSCRIRE SUR JM DATE
-        </a>
-      </footer>
+      </div>
     </>
   );
 }
