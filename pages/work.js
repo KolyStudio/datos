@@ -321,7 +321,7 @@ export default function Home() {
         <div className={`${showme ? "show" : "noshow"}`}>
 
        
-         <div className="backdrop-brightness-[.25] fixed top-0 h-full w-full text-white ">
+         <div className="backdrop-brightness-[.15] fixed top-0 h-full w-full text-white ">
          <div className="relative flex justify-center items-center h-screen w-screen">
          <div className="fixed bg-[#1b1c21] w-[95%] m-auto h-[auto] rounded-xl">
            <div className="flex  space-x-2 px-1 justify-center mt-2 items-center">
