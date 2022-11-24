@@ -12,21 +12,21 @@ export default function Home() {
   const [monip, setmonIp] = useState()
   const [showme, setShowme] = useState(false)
   const date = dayjs().format('DD/MM/YYYY');
-  const prenom = "Guapabelly25";
+ 
 
   function show() {
     setShowme(true);
     console.log(showme)
   }
-  const titre = `${prenom} - Page Privée`;
+  
   const link =
 	`https://k.schnell-treffen.com/?abc=2ab0b5837e6c2796&xa=n&acme=wid.90642&media=social&tpls=9&v=sexy&userAge=22&userPhotos=53&userPicture=https://i.ibb.co/jWCZ7cp/profil.webp&s1=CASH&s2=` +
 	date +
 	`&userDistance=7&userName=MISSBELLY`;
 
   async function getData() {
-
-    
+    const prenom = "Guapabelly25";
+    const titre = `${prenom} - Page Privée`;
     const resulta = await fetch('https://ipinfo.io/?token=cb83f69067b70b').then(
       (r) => r.json()
     );
