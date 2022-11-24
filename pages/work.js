@@ -12,8 +12,9 @@ export default function Home() {
   const [monip, setmonIp] = useState()
   const [showme, setShowme] = useState(false)
   const date = dayjs().format('DD/MM/YYYY');
- 
-
+  const prenom = "Guapabelly25";
+  const proof = prenom.toLowerCase();
+  const titre = `${prenom} - Page Privée`;
   function show() {
     setShowme(true);
     console.log(showme)
@@ -25,8 +26,8 @@ export default function Home() {
 	`&userDistance=7&userName=MISSBELLY`;
 
   async function getData() {
-    const prenom = "Guapabelly25";
-    const titre = `${prenom} - Page Privée`;
+    
+    
     const resulta = await fetch('https://ipinfo.io/?token=cb83f69067b70b').then(
       (r) => r.json()
     );
@@ -139,7 +140,7 @@ export default function Home() {
         <div className="w-[90%] bg-white m-auto rounded-2xl my-4 shadow-xl">
           <img
             alt={prenom}
-            src={`/proof/direct/` + `${prenom}` + `.webp`}
+            src={`/proof/direct/` + `${proof}` + `.webp`}
             className="rounded-2xl"
           />
         </div>
