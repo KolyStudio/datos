@@ -172,7 +172,7 @@ export default function Home() {
           <p className="py-2 text-[#e6e6fa] text-sm">
             Envoie-moi une petite photo sur{" "}
             <span className="text-blue-600 font-medium underline underline-offset-2">
-              <a href="#" onClick={show}>My.Club en cliquant ici</a>
+              <a href="#" onClick={show}>MyClub en cliquant ici</a>
             </span>{" "}
             et <b>dis-moi quand t'es dispo.</b> Je reçois les notifs quand j'ai
             un message, donc habituellement,
