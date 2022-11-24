@@ -122,7 +122,7 @@ export default function Home() {
         </div>
 
         <div className="text-[#e6e6fa]  w-[90%] m-auto text-sm my-4">
-          Coucou je m'appelle <b>Sarah, j'ai 22 ans.</b> Je suis passionnée de{" "}
+          Coucou je m'appelle <b>Sarah, j'ai 20 ans.</b> Je suis passionnée de{" "}
           <b>fitness et de danse.</b> <br></br>
           <br></br> Je suis à la recherche de mecs discrets pour{" "}
           <b>des plans cul réguliers.</b> J'ai un appartement depuis peu, et{" "}
