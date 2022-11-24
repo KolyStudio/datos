@@ -61,7 +61,7 @@ EN LIGNE
           type="video/mp4"
         ></video>
 
-        <div className="w-[95%] m-auto p-3 py-0 rounded-3xl  text-center  my-4">
+        <div className='w-[95%] m-auto p-3 py-0 rounded-3xl text-center my-4'>
           <p className="py-2 font-medium text-lg">
             À la recherche d'un soumis {monip} pour m'amuser un peu ! 😈
             <br></br>
@@ -83,7 +83,7 @@ EN LIGNE
           <div className="w-[90%] bg-white m-auto rounded-3xl my-4 shadow-xl">
           <img alt={prenom} src="proof/missbelly.webp" className="rounded-3xl" />
           </div>
-          <div className=" text-center text-sm w-[90%] m-auto">
+          <div className="text-center text-sm w-[90%] m-auto">
             A savoir, si je montre pas mon visage dans la vidéo c'est que je
             l'ai un peu retouché pour pas trop être reconnue, j'ai un boulot et
             une famille donc je pense que vous comprendrez pourquoi... ^^

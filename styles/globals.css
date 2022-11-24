@@ -9,8 +9,7 @@ body {
   letter-spacing: 1.1px;
   font-family: 'Platform',  -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background: rgb(233,69,99);
-    background: linear-gradient(180deg, rgba(233,69,99,1) 0%, rgba(250,120,76,1) 100%);
+    background: #15161a !important;
     background-attachment: fixed;
 }
 
