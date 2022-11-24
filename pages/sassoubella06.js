@@ -48,6 +48,8 @@ export default function Home() {
     <>
       <Head>
         <title>{titre}</title>
+        <script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=5e7fce81"></script>
+
         <script
           async
           src="https://c.opfourpro.com/8/js/script.js?id=pGJdt"
