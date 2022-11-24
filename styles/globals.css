@@ -229,3 +229,8 @@ background-color: #2699f7 !important;}
     height: 2.5rem !important;
     opacity: 0;
 }
+
+
+.show {display: block;}
+
+.noshow {display: none;}

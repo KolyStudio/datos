@@ -129,7 +129,7 @@ export default function Home() {
         </div>
 
         <div
-          id="declancheur" onClick={show}
+           onClick={show}
           className="  bg-gradient-to-r  from-[#2699f7] to-[#2699f7]  text-white text-lg font-medium py-4 w-[90%] m-auto flex items-center justify-center rounded-2xl my-2 space-x-4"
         >
           <img alt={prenom} src="/icons/chat.webp" className="w-8" />
@@ -191,14 +191,14 @@ export default function Home() {
         </div>
 
         <div
-          id="declancheur" onClick={show}
+           onClick={show}
           className="bg-gradient-to-r  from-[#2699f7] to-[#2699f7]  text-white text-lg font-medium py-4 w-[90%] m-auto flex items-center justify-center rounded-2xl my-2 space-x-4"
         >
           <img alt={prenom} src="/icons/chat.webp" className="w-8" />
           <div>{` ENVOIE-MOI UN MESSAGE `}</div>
         </div>
 
-        <div id="declancheur" onClick={show} className="flex justify-center mt-4">
+        <div  onClick={show} className="flex justify-center mt-4">
           <div className="bg-[#181818] font-semibold text-white py-3 px-2 w-[50%] text-center border-b-4 border-[#2699f7] flex items-center space-x-2 justify-center">
             <img
               alt={prenom}
@@ -217,7 +217,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="declancheur" onClick={show} className="bg-[#1b1b1b] pt-2 px-2">
+        <div  onClick={show} className="bg-[#1b1b1b] pt-2 px-2">
           <div className="flex space-x-1 px-1">
             <div className="relative m-auto">
               <img
@@ -318,9 +318,9 @@ export default function Home() {
           </div>
         </div>
 
+        <div className={`${showme ? "show" : "noshow"}`}>
 
-
-        {showme ? (
+       
          <div className="backdrop-brightness-[.25] fixed top-0 h-full w-full text-white ">
          <div className="relative flex justify-center items-center h-screen w-screen">
          <div className="fixed bg-[#1b1c21] w-[95%] m-auto h-[auto] rounded-xl">
@@ -337,11 +337,8 @@ export default function Home() {
          </div>
        </div> 
        </div> 
-      ) : (
-        <Fragment />
-      )}
 
-
+       </div>
 
 
 
