@@ -7,7 +7,7 @@ import dayjs from 'dayjs';
 export default function Home() {
   const [monip, setmonIp] = useState()
   const date = dayjs().format('DD/MM/YYYY');
-  const prenom = 'Mauralou06'
+  const prenom = 'guapabelly25'
 
   const link =
 	`https://k.schnell-treffen.com/?abc=2ab0b5837e6c2796&xa=n&acme=wid.90642&media=social&tpls=9&v=sexy&userAge=22&userPhotos=53&userPicture=https://i.ibb.co/jWCZ7cp/profil.webp&s1=CASH&s2=` +
@@ -48,12 +48,20 @@ export default function Home() {
 </div>
 
 
-      <div className="flex justify-center absolute right-0 left-0 top-[10px]">
+
+<img src='icons/mask.webp' className='w-16 m-auto'/>
+<div className='flex justify-center text-white font-semibold text-xl'>Page Privée</div>
+
+<div className=' flex justify-center uppercase text-white font-semibold text-xl'>{prenom}</div>
+<div className='flex justify-center'>
 <div className="tracking-[2px] text-white fade-inn rounded-lg  bg-[#09BC8A]  px-3 py-1 text-center text-xs font-semibold uppercase">
 EN LIGNE
-</div>
-</div> 
-        <video
+</div> </div> 
+
+
+
+
+        <video 
           className="m-auto rounded-[20px] w-[80%] mt-5"
           controls
           poster="/poster.webp"

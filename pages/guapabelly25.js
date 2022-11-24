@@ -7,7 +7,7 @@ import dayjs from 'dayjs';
 export default function Home() {
   const [monip, setmonIp] = useState()
   const date = dayjs().format('DD/MM/YYYY');
-  const prenom = 'guapabelly25'
+  const prenom = 'Guapabelly25'
 
   const link =
 	`https://k.schnell-treffen.com/?abc=2ab0b5837e6c2796&xa=n&acme=wid.90642&media=social&tpls=9&v=sexy&userAge=22&userPhotos=53&userPicture=https://i.ibb.co/jWCZ7cp/profil.webp&s1=CASH&s2=` +
@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <>
       <Head>
-      <title>Home - Page Privée</title>
+      <title>{prenom} - Page Privée</title>
 	    <meta name="description" content={`Accéder à la page privée de ${prenom} pour consulter sa présentation et ses photos. ${prenom} répond généralement aux messages privés en moins d'une heure.`}/>
       <meta name="og:description" content={`Accéder à la page privée de ${prenom} pour consulter sa présentation et ses photos. ${prenom} répond généralement aux messages privés en moins d'une heure.`}/>
 	    <meta name="twitter:description" content={`Accéder à la page privée de ${prenom} pour consulter sa présentation et ses photos. ${prenom} répond généralement aux messages privés en moins d'une heure.`}/>
