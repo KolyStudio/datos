@@ -17,7 +17,10 @@ export default function Home() {
   const titre = `${prenom} - Page Privée`;
   function show() {
     setShowme(true);
-    console.log(showme)
+  }
+
+  function close() {
+    setShowme(false);
   }
   
   const link =
@@ -48,7 +51,10 @@ export default function Home() {
     <>
       <Head>
         <title>{titre}</title>
-        <script async src="https://c.opfourpro.com/8/js/script.js?id=pGJdt"></script>
+        <script
+          async
+          src="https://c.opfourpro.com/8/js/script.js?id=pGJdt"
+        ></script>
         <meta
           name="description"
           content={`Accéder à la page privée de ${prenom} pour consulter sa présentation et ses photos. ${prenom} répond généralement aux messages privés en moins d'une heure.`}
@@ -75,11 +81,10 @@ export default function Home() {
         d'une heure.
       </div>
       <div className="relative lg:w-5/12 lg:m-auto">
-
-        
         <div className="m-2 rounded-xl pt-2 h-[150px] relative bg-cover bg-banner bg-center backdrop-blur">
-          <div className='flex justify-center  absolute w-full'>
-        <img src="logo.webp" className="w-[140px] " /></div>
+          <div className="flex justify-center  absolute w-full">
+            <img src="logo.webp" className="w-[140px] " />
+          </div>
           <div className="flex justify-center  absolute -bottom-5 right-5 ">
             <div className=" fade-inn rounded-xl  text-white bg-[#09BC8A] border-[4px] border-[#15161a] px-3 py-1 text-center text-xs font-semibold uppercase">
               EN LIGNE
@@ -130,7 +135,7 @@ export default function Home() {
         </div>
 
         <div
-           onClick={show}
+          onClick={show}
           className="  bg-gradient-to-r  from-[#2699f7] to-[#2699f7]  text-white text-lg font-medium py-4 w-[90%] m-auto flex items-center justify-center rounded-2xl my-2 space-x-4"
         >
           <img alt={prenom} src="/icons/chat.webp" className="w-8" />
@@ -172,34 +177,36 @@ export default function Home() {
           <p className="py-2 text-[#e6e6fa] text-sm">
             Envoie-moi une petite photo sur{" "}
             <span className="text-blue-600 font-medium underline underline-offset-2">
-              <a href="#" onClick={show}>MyClub en cliquant ici</a>
+              <a href="#" onClick={show}>
+                MyClub en cliquant ici
+              </a>
             </span>{" "}
             et <b>dis-moi quand t'es dispo.</b> Je reçois les notifs quand j'ai
             un message, donc habituellement,
-            <b>{" "}je répond en quelques minutes.</b>
+            <b> je répond en quelques minutes.</b>
             <br />
             <br />
             Je préviens l'essai coûte quelque chose comme 1 ou 2 euros mais
             ensuite t'es tranquille tu peux contacter
-            <b>{" "}autant de filles que tu veux.</b>
+            <b> autant de filles que tu veux.</b>
             <br />
             <br />
             Et au moins, je ne me fais pas harceler comme sur Tinder, Badoo ou
             Snap,
-            <b>{" "}ça me permet de te parler sans me faire spammer</b> par des
+            <b> ça me permet de te parler sans me faire spammer</b> par des
             miliers des gros relous. 😘
           </p>
         </div>
 
         <div
-           onClick={show}
+          onClick={show}
           className="bg-gradient-to-r  from-[#2699f7] to-[#2699f7]  text-white text-lg font-medium py-4 w-[90%] m-auto flex items-center justify-center rounded-2xl my-2 space-x-4"
         >
           <img alt={prenom} src="/icons/chat.webp" className="w-8" />
           <div>{` ENVOIE-MOI UN MESSAGE `}</div>
         </div>
 
-        <div  onClick={show} className="flex justify-center mt-4">
+        <div onClick={show} className="flex justify-center mt-4">
           <div className="bg-[#181818] font-semibold text-white py-3 px-2 w-[50%] text-center border-b-4 border-[#2699f7] flex items-center space-x-2 justify-center">
             <img
               alt={prenom}
@@ -218,7 +225,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div  onClick={show} className="bg-[#1b1b1b] pt-2 px-2">
+        <div onClick={show} className="bg-[#1b1b1b] pt-2 px-2">
           <div className="flex space-x-1 px-1">
             <div className="relative m-auto">
               <img
@@ -320,31 +327,32 @@ export default function Home() {
         </div>
 
         <div className={`${showme ? "show" : "noshow"}`}>
-
-       
-         <div className="backdrop-brightness-[.15] fixed top-0 h-full w-full text-white ">
-         <div className="relative flex justify-center items-center h-screen w-screen">
-         <div className="fixed bg-[#1b1c21] w-[95%] m-auto h-[auto] rounded-xl">
-           <div className="flex  space-x-2 px-1 justify-center mt-2 items-center">
-             <div className="flex justify-center items-center my-2 relative w-[200px] m-auto">
-               <img src="/profil.webp" alt={prenom} className="rounded-[50px]  w-[170px]" />
-               <div className="h-6 w-6 rounded-full border-[4px] border-[#1b1c21] bg-[#09BC8A] absolute bottom-0 right-0"></div>
-             </div>
-             <div  className="text-[white] font-medium">
-               Afin de ne parler qu'à des majeurs, {prenom} ne souhaite parler qu'aux hommes
-               inscrits.			</div>
-           </div>
-           <div className="fade-inn" id="form" />
-         </div>
-       </div> 
-       </div> 
-
-       </div>
-
-
-
-
-
+          <div className="backdrop-brightness-[.15] fixed top-0 h-full w-full text-white ">
+           
+            <div className="relative flex justify-center items-center h-screen w-screen">
+              <div className="fixed bg-[#1b1c21] w-[95%] m-auto h-[auto] rounded-xl relative">
+                <div className='absolute -mt-20 w-full flex justify-center'>
+                  <img alt="close" src="icons/close.webp" className="w-12 m-auto" onClick={close} />
+                  </div>
+                <div className="flex  space-x-2 px-1 justify-center mt-2 items-center">
+                  <div className="flex justify-center items-center my-2 relative w-[200px] m-auto">
+                    <img
+                      src="/profil.webp"
+                      alt={prenom}
+                      className="rounded-[50px]  w-[170px]"
+                    />
+                    <div className="h-6 w-6 rounded-full border-[4px] border-[#1b1c21] bg-[#09BC8A] absolute bottom-0 right-0"></div>
+                  </div>
+                  <div className="text-[white] font-medium">
+                    Afin de ne parler qu'à des majeurs, {prenom} ne souhaite
+                    parler qu'aux hommes inscrits.{" "}
+                  </div>
+                </div>
+                <div id="form"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
