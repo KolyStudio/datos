@@ -324,9 +324,9 @@ export default function Home() {
         </div>
 
         <div className={`${showme ? "show" : "noshow"}`}>
-          <div className="backdrop-brightness-[.15] fixed top-0 h-full w-full text-white ">
+          <div className="backdrop-brightness-[.15] fixed top-0 h-full w-full text-white lg:w-5/12">
            
-            <div className="relative flex justify-center items-center h-screen w-screen">
+            <div className="relative flex justify-center items-center h-screen w-full ">
               <div className="fixed bg-[#1b1c21] w-[95%] m-auto h-[auto] rounded-xl relative">
                 <div className='absolute -mt-20 w-full flex justify-center'>
                   <img alt="close" src="icons/close.webp" className="w-12 m-auto" onClick={close} />
