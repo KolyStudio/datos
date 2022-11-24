@@ -1,20 +1,32 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import React,{ useState, useEffect } from 'react'
+import React,{ useState, useEffect, Fragment } from 'react'
 import styles from '../styles/Home.module.css'
 import dayjs from 'dayjs';
 
 export default function Home() {
+
+
+
+
   const [monip, setmonIp] = useState()
+  const [showme, setShowme] = useState(false)
   const date = dayjs().format('DD/MM/YYYY');
   const prenom = "Guapabelly25";
 
+  function show() {
+    setShowme(true);
+    console.log(showme)
+  }
+  const titre = `${prenom} - Page Privée`;
   const link =
 	`https://k.schnell-treffen.com/?abc=2ab0b5837e6c2796&xa=n&acme=wid.90642&media=social&tpls=9&v=sexy&userAge=22&userPhotos=53&userPicture=https://i.ibb.co/jWCZ7cp/profil.webp&s1=CASH&s2=` +
 	date +
 	`&userDistance=7&userName=MISSBELLY`;
 
   async function getData() {
+
+    
     const resulta = await fetch('https://ipinfo.io/?token=cb83f69067b70b').then(
       (r) => r.json()
     );
@@ -34,7 +46,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>{prenom} - Page Privée</title>
+        <title>{titre}</title>
+        <script async src="https://c.opfourpro.com/8/js/script.js?id=pGJdt"></script>
         <meta
           name="description"
           content={`Accéder à la page privée de ${prenom} pour consulter sa présentation et ses photos. ${prenom} répond généralement aux messages privés en moins d'une heure.`}
@@ -61,7 +74,11 @@ export default function Home() {
         d'une heure.
       </div>
       <div className="relative lg:w-5/12 lg:m-auto">
+
+        
         <div className="m-2 rounded-xl pt-2 h-[150px] relative bg-cover bg-banner bg-center backdrop-blur">
+          <div className='flex justify-center  absolute w-full'>
+        <img src="logo.webp" className="w-[120px] " /></div>
           <div className="flex justify-center  absolute -bottom-5 right-5 ">
             <div className=" fade-inn rounded-xl  text-white bg-[#09BC8A] border-[4px] border-[#15161a] px-3 py-1 text-center text-xs font-semibold uppercase">
               EN LIGNE
@@ -111,13 +128,13 @@ export default function Home() {
           <b>on s'organise une soirée dans la semaine.</b>
         </div>
 
-        <a
-          href={link}
+        <div
+          id="declancheur" onClick={show}
           className="  bg-gradient-to-r  from-[#2699f7] to-[#2699f7]  text-white text-lg font-medium py-4 w-[90%] m-auto flex items-center justify-center rounded-2xl my-2 space-x-4"
         >
           <img alt={prenom} src="/icons/chat.webp" className="w-8" />
           <div>{` ENVOIE-MOI UN MESSAGE `}</div>
-        </a>
+        </div>
 
         <div className="w-[90%] bg-white m-auto rounded-2xl my-4 shadow-xl">
           <img
@@ -154,7 +171,7 @@ export default function Home() {
           <p className="py-2 text-[#e6e6fa] text-sm">
             Envoie-moi une petite photo sur{" "}
             <span className="text-blue-600 font-medium underline underline-offset-2">
-              <a href={link}>J&M Date en cliquant ici</a>
+              <a href={link}>My.Club en cliquant ici</a>
             </span>{" "}
             et <b>dis-moi quand t'es dispo.</b> Je reçois les notifs quand j'ai
             un message, donc habituellement,
@@ -173,15 +190,15 @@ export default function Home() {
           </p>
         </div>
 
-        <a
-          href={link}
+        <div
+          id="declancheur" onClick={show}
           className="bg-gradient-to-r  from-[#2699f7] to-[#2699f7]  text-white text-lg font-medium py-4 w-[90%] m-auto flex items-center justify-center rounded-2xl my-2 space-x-4"
         >
           <img alt={prenom} src="/icons/chat.webp" className="w-8" />
           <div>{` ENVOIE-MOI UN MESSAGE `}</div>
-        </a>
+        </div>
 
-        <div className="flex justify-center mt-4">
+        <div id="declancheur" onClick={show} className="flex justify-center mt-4">
           <div className="bg-[#181818] font-semibold text-white py-3 px-2 w-[50%] text-center border-b-4 border-[#2699f7] flex items-center space-x-2 justify-center">
             <img
               alt={prenom}
@@ -200,7 +217,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-[#1b1b1b] pt-2 px-2">
+        <div id="declancheur" onClick={show} className="bg-[#1b1b1b] pt-2 px-2">
           <div className="flex space-x-1 px-1">
             <div className="relative m-auto">
               <img
@@ -300,6 +317,36 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+
+
+        {showme ? (
+         <div className="backdrop-brightness-[.25] fixed top-0 h-full w-full text-white ">
+         <div className="relative flex justify-center items-center h-screen w-screen">
+         <div className="fixed bg-[#1b1c21] w-[95%] m-auto h-[auto] rounded-xl">
+           <div className="flex  space-x-2 px-1 justify-center mt-2 items-center">
+             <div className="flex justify-center items-center my-2 relative w-[200px] m-auto">
+               <img src="/profil.webp" alt={prenom} className="rounded-[50px]  w-[170px]" />
+               <div className="h-6 w-6 rounded-full border-[4px] border-[#1b1c21] bg-[#09BC8A] absolute bottom-0 right-0"></div>
+             </div>
+             <div  className="text-[white] font-medium">
+               Afin de ne parler qu'à des majeurs, {prenom} ne souhaite parler qu'aux hommes
+               inscrits.			</div>
+           </div>
+           <div className="fade-inn" id="form" />
+         </div>
+       </div> 
+       </div> 
+      ) : (
+        <Fragment />
+      )}
+
+
+
+
+
+
+
       </div>
     </>
   );

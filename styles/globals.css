@@ -139,3 +139,93 @@ a {
   font-weight: 300;
   font-style: italic;
 }
+
+
+
+
+.ptprelinker-containers-fullpage-default.ptprelinker-show .ptprelinker-content .ptprelinker-content-inner {
+  font-family: Platform;
+  letter-spacing: 1.5px !important;
+}
+
+
+.ptprelinker-contents-register-form-default .ptprelinker-content .ptprelinker-content-inner .ptprelinker-register-form .ptprelinker-legend-form {
+  color:#2699f7 !important;
+  font-weight: 700;
+  font-family: Platform !important;
+  font-size: 19px !important;
+  background-color: none !important;
+  
+}
+.ptprelinker-contents-register-form-default .ptprelinker-checkbox .ptprelinker-input-checkbox+.ptprelinker-label-checkbox::before {
+  border-color: #2699f7 !important; 
+ }
+
+ .ptprelinker-contents-register-form-default .ptprelinker-checkbox .ptprelinker-input-checkbox:checked+.ptprelinker-label-checkbox::before { 
+ 
+background-color: #2699f7 !important;}
+
+    .ptprelinker-cgu-text {
+        margin-top: 0.4rem;
+        color: white !important;
+        font-size: 0px !important;
+    }
+
+    .ptprelinker-contents-register-form-default .ptprelinker-content .ptprelinker-content-inner .ptprelinker-register-form .ptprelinker-buttons .ptprelinker-button  {
+      border-radius: 20px !important;
+      font-weight: bold !important;
+      text-transform: uppercase !important;
+      background: #2699f7 !important;
+      border-bottom: 4px solid #2699f7 !important;
+      border: none !important;
+      font-weight: 900px !important;
+      font-family: Platform !important;
+      color:white !important;
+      letter-spacing: 1.1px !important;
+    }
+
+    .ptprelinker-contents-register-form-default .ptprelinker-content .ptprelinker-content-inner {
+        background-color:#1b1c21 !important;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .ptprelinker-contents-register-form-default .ptprelinker-content .ptprelinker-content-inner .ptprelinker-register-form .ptprelinker-legend-form {
+        
+        background-color: #1b1c21 !important;
+       
+    }
+
+    .ptprelinker-contents-register-form-default .ptprelinker-content .ptprelinker-content-inner {
+        background-color: #1b1c21 !important;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 30px !important;
+    }
+
+    
+    .ptprelinker-contents-register-form-default .ptprelinker-content .ptprelinker-content-inner .ptprelinker-register-form .ptprelinker-input:focus, .ptprelinker-contents-register-form-default .ptprelinker-content .ptprelinker-content-inner .ptprelinker-register-form .ptprelinker-select:focus {
+    border-color: white !important}
+
+    .ptprelinker-contents-register-form-default .ptprelinker-input:focus, .ptprelinker-contents-register-form-default .ptprelinker-select:focus {
+    box-shadow:  none !important;}
+
+    .ptprelinker-containers-fullpage-default.ptprelinker-show .ptprelinker-content .ptprelinker-content-inner {
+   border-radius: 20px;
+    width: 95%;
+    margin: 0 auto;
+    
+}
+
+.ptprelinker-contents-register-form-default .ptprelinker-content .ptprelinker-content-inner .ptprelinker-register-form .ptprelinker-cgu-link {
+    color: white !important;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.ptprelinker-contents-register-form-default .ptprelinker-checkbox .ptprelinker-input-checkbox {
+  
+    width: 100% !important;
+    height: 2.5rem !important;
+    opacity: 0;
+}
