@@ -172,21 +172,21 @@ export default function Home() {
           <p className="py-2 text-[#e6e6fa] text-sm">
             Envoie-moi une petite photo sur{" "}
             <span className="text-blue-600 font-medium underline underline-offset-2">
-              <a href={link}>My.Club en cliquant ici</a>
+              <a href="#" onClick={show}>My.Club en cliquant ici</a>
             </span>{" "}
             et <b>dis-moi quand t'es dispo.</b> Je reçois les notifs quand j'ai
             un message, donc habituellement,
-            <b>je répond en quelques minutes.</b>
+            <b>{" "}je répond en quelques minutes.</b>
             <br />
             <br />
             Je préviens l'essai coûte quelque chose comme 1 ou 2 euros mais
             ensuite t'es tranquille tu peux contacter
-            <b>autant de filles que tu veux.</b>
+            <b>{" "}autant de filles que tu veux.</b>
             <br />
             <br />
             Et au moins, je ne me fais pas harceler comme sur Tinder, Badoo ou
             Snap,
-            <b>ça me permet de te parler sans me faire spammer</b> par des
+            <b>{" "}ça me permet de te parler sans me faire spammer</b> par des
             miliers des gros relous. 😘
           </p>
         </div>
