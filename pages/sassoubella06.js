@@ -374,7 +374,7 @@ EN LIGNE
         </div>
       
 
-      <footer className='lg:w-4/12 lg:m-auto'>
+      <footer className=''>
         <div className="w-[90%] m-auto text-center text-white text-sm">
           <div className="text-[#ef476f] text-center text-xl font-medium my-2">
             Tu veux nous rejoindre ?
