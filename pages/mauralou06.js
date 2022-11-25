@@ -95,7 +95,7 @@ EN LIGNE
 </div>
 </div>
         <video
-          className="m-auto rounded-[20px] w-[70%] mt-5"
+          className="m-auto rounded-[20px] w-[60%] lg:w-[50%] mt-5"
           controls
           poster="/poster.webp"
           src="/proof2.mp4"
