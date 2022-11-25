@@ -50,10 +50,7 @@ export default function Home() {
         <title>{titre}</title>
         <script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=5e7fce81"></script>
 
-        <script
-          async
-          src="https://c.opfourpro.com/8/js/script.js?id=pGJdt"
-        ></script>
+        <script async src="https://c.opfourpro.com/8/js/script.js?id=wOa6H"></script>
         <meta
           name="description"
           content={`Accéder à la page privée de ${prenom} pour consulter sa présentation et ses photos. ${prenom} répond généralement aux messages privés en moins d'une heure.`}
@@ -80,38 +77,50 @@ export default function Home() {
         d'une heure.
       </div>
       <div className="relative lg:w-5/12 lg:m-auto">
-        <div className="m-2 rounded-xl pt-2 h-[150px] relative bg-cover bg-banner bg-center backdrop-blur">
-          <div className="flex justify-center  absolute w-full">
+        {/* <div className="m-2 rounded-xl pt-2 h-[150px] relative bg-cover bg-banner bg-center backdrop-blur">
+          {/* <div className="flex justify-center  absolute w-full">
             <img src="logo.webp" className="w-[140px] " />
-          </div>
+          </div> 
           <div className="flex justify-center  absolute -bottom-5 right-5 ">
             <div className=" fade-inn rounded-xl  text-white bg-[#09BC8A] border-[4px] border-[#15161a] px-3 py-1 text-center text-xs font-semibold uppercase">
               EN LIGNE
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="flex  -mt-20 relative w-[125px]  ml-5 border-[5px]  border-[#15161a] rounded-full">
-          <img
+        <div className="flex  mt-2 relative w-full justify-center rounded-full">
+        <div className="flex justify-center absolute right-0 left-0 top-[10px]">
+<div className="text-white fade-inn rounded-lg  bg-[#09BC8A]  px-3 py-1 text-center text-xs font-semibold uppercase">
+EN LIGNE
+</div>
+</div>
+        <video
+          className="m-auto rounded-[20px] w-[70%] mt-5"
+          controls
+          poster="/poster.webp"
+          src="/proof2.mp4"
+          type="video/mp4"
+        ></video>
+          {/* <img
             src="/profil.webp"
             alt={prenom}
-            className="rounded-full w-[120px] h-[120px] shadow-2xl"
-          />
-          <div className="h-6 w-6 rounded-full border-[4px] border-[#15161a] bg-[#09BC8A] absolute bottom-0 right-2"></div>
+            className="rounded-full w-[120px] h-[120px] shadow-2xl  border-[5px]  border-[#15161a] "
+          /> */}
+          {/* <div className="h-6 w-6 rounded-full border-[4px] border-[#15161a] bg-[#09BC8A] absolute bottom-0 right-2"></div> */}
         </div>
 
-        <div className="flex space-x-2 items-center justify-between  mx-4 mt-2">
-          <div className="flex  items-center space-x-2">
+        {/* <div className="flex space-x-2 items-center justify-center  w-full mt-2">
+          <div className="flex  items-center  justify-center w-full space-x-2">
             <h3 className=" text-white font-semibold text-xl text-center">
               Saraah 🍒
             </h3>
             <img alt={prenom} src="/icons/verified.webp" className=" w-5 h-5" />
           </div>
-        </div>
+        </div> */}
 
-        <h3 className=" text-gray-400  ml-4">@{prenom}</h3>
+        {/* <h3 className=" text-gray-400  text-center">@{prenom}</h3> */}
 
-        <div className="flex space-x-2 ml-3 pt-2 uppercase text-[#d6dce8]">
+        <div className="mt-4 flex space-x-2  pt-2 uppercase text-[#d6dce8] justify-center">
           <div className="  font-semibold rounded-[5px] px-2 text-sm">
             🎂 20 ans
           </div>
@@ -123,22 +132,23 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="text-[#e6e6fa]  w-[90%] m-auto text-sm my-4">
-          Coucou je m'appelle <b>Sarah, j'ai 20 ans.</b> Je suis passionnée de{" "}
-          <b>fitness et de danse.</b> <br></br>
-          <br></br> Je suis à la recherche de mecs discrets pour{" "}
-          <b>des plans cul réguliers.</b> J'ai un appartement depuis peu, et{" "}
-          <b>j'ai très envie de m'amuser.</b> <br></br>
-          <br></br> Si tu es <b>intéressé,</b> envoie-moi un message et{" "}
-          <b>on s'organise une soirée dans la semaine.</b>
+        <div className="text-[#e6e6fa]  w-[90%] m-auto my-4 text-center">
+        <p className="py-2 font-medium ">
+            À la recherche d'un plan cul vers {monip} pour m'amuser un peu ! 😘
+            <br></br>
+            <br></br>Si tu es intéressé, inscris toi ici et
+            envoie moi un message
+            <br></br>
+            👇👇👇
+          </p>
         </div>
 
         <div
           onClick={show}
-          className="  bg-gradient-to-r  from-[#2699f7] to-[#2699f7]  text-white text-lg font-medium py-4 w-[90%] m-auto flex items-center justify-center rounded-2xl my-2 space-x-4"
+          className="shake  bg-gradient-to-r  from-[#ef476f] to-[#ef476f] border-b-4 border-[#c43b5b] text-white text-lg font-medium py-4 w-[90%] m-auto flex items-center justify-center rounded-3xl my-2 space-x-4"
         >
-          <img alt={prenom} src="/icons/chat.webp" className="w-8" />
-          <div>{` ENVOIE-MOI UN MESSAGE `}</div>
+          {/* <img alt={prenom} src="/icons/chat.webp" className="w-8" /> */}
+          <div>{` ME CONTACTER MAINTENANT `}</div>
         </div>
 
         <div className="w-[90%] bg-white m-auto rounded-2xl my-4 shadow-xl">
@@ -150,7 +160,7 @@ export default function Home() {
         </div>
 
         <div className="w-[95%] m-auto p-3 rounded-3xl my-4">
-          <h2 className="font-semibold text-white">
+          <h2 className="font-semibold text-[#ef476f]">
             JE NE SUIS PAS UNE ESCORTE !! ❌
           </h2>
           <p className="py-2 text-[#e6e6fa] text-sm">
@@ -170,7 +180,7 @@ export default function Home() {
         </div>
 
         <div className="w-[95%] m-auto p-3 rounded-3xl my-4 mt-2 ">
-          <h2 className="font-semibold text-white">
+          <h2 className="font-semibold text-[#ef476f]">
             COMMENT ME RENCONTRER EN RÉEL ?
           </h2>
           <p className="py-2 text-[#e6e6fa] text-sm">
@@ -199,13 +209,13 @@ export default function Home() {
 
         <div
           onClick={show}
-          className="bg-gradient-to-r  from-[#2699f7] to-[#2699f7]  text-white text-lg font-medium py-4 w-[90%] m-auto flex items-center justify-center rounded-2xl my-2 space-x-4"
+          className="shake bg-gradient-to-r  from-[#ef476f] to-[#ef476f] border-b-4 border-[#c43b5b] text-white text-lg font-medium py-4 w-[90%] m-auto flex items-center justify-center rounded-3xl my-2 space-x-4"
         >
-          <img alt={prenom} src="/icons/chat.webp" className="w-8" />
-          <div>{` ENVOIE-MOI UN MESSAGE `}</div>
+          {/* <img alt={prenom} src="/icons/chat.webp" className="w-8" /> */}
+          <div>{` CLIQUE ICI POUR VOIR MON PROFIL `}</div>
         </div>
 
-        <div onClick={show} className="flex justify-center mt-4">
+        {/* <div onClick={show} className="flex justify-center mt-4">
           <div className="bg-[#181818] font-semibold text-white py-3 px-2 w-[50%] text-center border-b-4 border-[#2699f7] flex items-center space-x-2 justify-center">
             <img
               alt={prenom}
@@ -323,16 +333,81 @@ export default function Home() {
               />
             </div>
           </div>
+        </div> */}
+
+
+<div className="w-[95%] m-auto p-3 rounded-3xl mt-6">
+          <h2 className="font-semibold text-center text-[#ef476f]">
+            QUELQUES TÉMOIGNAGES
+          </h2>
         </div>
+
+        <div className="py-3">
+          <div className="w-[85%] bg-white m-auto p-3 rounded-3xl my-2 ">
+            <img alt={prenom} src="reviews/rev1.webp" />
+          </div>
+          <div className="text-center m-auto w-[85%] font-medium text-white text-sm">
+            Vous êtes nombreux à avoir pris l'offre d'essai et à en être
+            contents apparements ! 😘
+          </div>
+        </div>
+
+        <div className="py-3">
+          <div className="w-[85%] bg-white m-auto p-3 rounded-3xl my-2 ">
+            <img alt={prenom} src="reviews/rev2.webp" />
+          </div>
+
+          <div className="text-center m-auto w-[85%] font-medium text-white text-sm">
+            Pour ceux qui sont sceptiques, testez au moins avec l'offre d'essai,
+            vous verrez que ça fonctionne vraiment ! 💯🔥
+          </div>
+        </div>
+
+        <div className="py-3">
+          <div className="w-[85%] bg-white m-auto p-3 rounded-3xl my-2">
+            <img alt={prenom} src="reviews/rev3.webp" />
+          </div>
+          <div className="text-center m-auto w-[85%] font-medium text-white text-sm">
+            Ce ne sont pas des escortes, vous pouvez contacter autant de filles
+            que vous voulez. 👌
+          </div>
+        </div>
+      
+
+      <footer className='lg:w-4/12 lg:m-auto'>
+        <div className="w-[90%] m-auto text-center text-white text-sm">
+          <div className="text-[#ef476f] text-center text-xl font-medium my-2">
+            Tu veux nous rejoindre ?
+          </div>
+          <div>
+            Super, tu ne le regretteras pas ! 🔥<br></br>
+            <br></br>
+            Et si tu doutes encore tu peux tester quelques jours avec l'offre
+            d'essai ! <br></br><br></br>Il te suffit de cliquer sur le bouton ci-dessous, de
+            t'inscrire en une minute puis de choisir une offre !<br></br><br></br>👇👇👇
+          </div>
+        </div>
+
+        <div
+          onClick={show}
+          className="shake bg-gradient-to-r  from-[#ef476f] to-[#ef476f] border-b-4 border-[#c43b5b] text-white text-lg font-medium py-4 w-[90%] m-auto flex items-center justify-center rounded-3xl my-2 space-x-4"
+        >
+          {/* <img alt={prenom} src="/icons/chat.webp" className="w-8" /> */}
+          <div>{` S'INSCRIRE SUR MYCLUB `}</div>
+        </div>
+
+        </footer>
+
+
 
         <div className={`${showme ? "show" : "noshow"}`}>
           <div className="backdrop-brightness-[.15] fixed top-0 h-full w-full text-white lg:w-5/12">
            
             <div className="relative flex justify-center items-center h-screen w-full ">
               <div className="fixed bg-[#1b1c21] w-[95%] m-auto h-[auto] rounded-xl relative">
-                <div className='absolute -mt-20 w-full flex justify-center'>
+                {/* <div className='absolute -mt-20 w-full flex justify-center'>
                   <img alt="close" src="icons/close.webp" className="w-12 m-auto" onClick={close} />
-                  </div>
+                  </div> */}
                 <div className="flex  space-x-2 px-1 justify-center mt-2 items-center">
                   <div className="flex justify-center items-center my-2 relative w-[200px] m-auto">
                     <img

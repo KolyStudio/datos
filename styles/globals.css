@@ -150,7 +150,7 @@ a {
 
 
 .ptprelinker-contents-register-form-default .ptprelinker-content .ptprelinker-content-inner .ptprelinker-register-form .ptprelinker-legend-form {
-  color:#2699f7 !important;
+  color:#ef476f !important;
   font-weight: 700;
   font-family: Platform !important;
   font-size: 19px !important;
@@ -158,12 +158,12 @@ a {
   
 }
 .ptprelinker-contents-register-form-default .ptprelinker-checkbox .ptprelinker-input-checkbox+.ptprelinker-label-checkbox::before {
-  border-color: #2699f7 !important; 
+  border-color: #ef476f !important; 
  }
 
  .ptprelinker-contents-register-form-default .ptprelinker-checkbox .ptprelinker-input-checkbox:checked+.ptprelinker-label-checkbox::before { 
  
-background-color: #2699f7 !important;}
+background-color: #ef476f !important;}
 
     .ptprelinker-cgu-text {
         margin-top: 0.4rem;
@@ -175,8 +175,8 @@ background-color: #2699f7 !important;}
       border-radius: 20px !important;
       font-weight: bold !important;
       text-transform: uppercase !important;
-      background: #2699f7 !important;
-      border-bottom: 4px solid #2699f7 !important;
+      background: #46b26e !important;
+      border-bottom: 4px solid #46b26e !important;
       border: none !important;
       font-weight: 900px !important;
       font-family: Platform !important;
@@ -234,3 +234,28 @@ background-color: #2699f7 !important;}
 .show {display: block;}
 
 .noshow {display: none;}
+
+.shake {
+  animation: shake 3s infinite; 
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

@@ -50,10 +50,7 @@ export default function Home() {
         <title>{titre}</title>
         <script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=5e7fce81"></script>
 
-        <script
-          async
-          src="https://c.opfourpro.com/8/js/script.js?id=pGJdt"
-        ></script>
+        <script async src="https://c.opfourpro.com/8/js/script.js?id=wOa6H"></script>
         <meta
           name="description"
           content={`Accéder à la page privée de ${prenom} pour consulter sa présentation et ses photos. ${prenom} répond généralement aux messages privés en moins d'une heure.`}
@@ -101,7 +98,7 @@ EN LIGNE
           className="m-auto rounded-[20px] w-[70%] mt-5"
           controls
           poster="/poster.webp"
-          src="/proof.mp4"
+          src="/proof2.mp4"
           type="video/mp4"
         ></video>
           {/* <img
@@ -148,7 +145,7 @@ EN LIGNE
 
         <div
           onClick={show}
-          className="  bg-gradient-to-r  from-[#2699f7] to-[#2699f7] border-b-4 border-[#1c73bb]  text-white text-lg font-medium py-4 w-[90%] m-auto flex items-center justify-center rounded-2xl my-2 space-x-4"
+          className="shake  bg-gradient-to-r  from-[#ef476f] to-[#ef476f] border-b-4 border-[#c43b5b] text-white text-lg font-medium py-4 w-[90%] m-auto flex items-center justify-center rounded-3xl my-2 space-x-4"
         >
           {/* <img alt={prenom} src="/icons/chat.webp" className="w-8" /> */}
           <div>{` ME CONTACTER MAINTENANT `}</div>
@@ -161,14 +158,9 @@ EN LIGNE
             className="rounded-2xl"
           />
         </div>
-        <div className="text-[#e6e6fa] text-center text-sm w-[90%] m-auto">
-            A savoir, si je montre pas mon visage dans la vidéo c'est que je
-            l'ai un peu retouché pour pas trop être reconnue, j'ai un boulot et
-            une famille donc je pense que vous comprendrez pourquoi... ^^
-          </div>
 
         <div className="w-[95%] m-auto p-3 rounded-3xl my-4">
-          <h2 className="font-semibold text-[#2699f7]">
+          <h2 className="font-semibold text-[#ef476f]">
             JE NE SUIS PAS UNE ESCORTE !! ❌
           </h2>
           <p className="py-2 text-[#e6e6fa] text-sm">
@@ -188,7 +180,7 @@ EN LIGNE
         </div>
 
         <div className="w-[95%] m-auto p-3 rounded-3xl my-4 mt-2 ">
-          <h2 className="font-semibold text-[#2699f7]">
+          <h2 className="font-semibold text-[#ef476f]">
             COMMENT ME RENCONTRER EN RÉEL ?
           </h2>
           <p className="py-2 text-[#e6e6fa] text-sm">
@@ -217,7 +209,7 @@ EN LIGNE
 
         <div
           onClick={show}
-          className="bg-gradient-to-r  from-[#2699f7] to-[#2699f7] border-b-4 border-[#1c73bb] text-white text-lg font-medium py-4 w-[90%] m-auto flex items-center justify-center rounded-2xl my-2 space-x-4"
+          className="shake bg-gradient-to-r  from-[#ef476f] to-[#ef476f] border-b-4 border-[#c43b5b] text-white text-lg font-medium py-4 w-[90%] m-auto flex items-center justify-center rounded-3xl my-2 space-x-4"
         >
           {/* <img alt={prenom} src="/icons/chat.webp" className="w-8" /> */}
           <div>{` CLIQUE ICI POUR VOIR MON PROFIL `}</div>
@@ -345,7 +337,7 @@ EN LIGNE
 
 
 <div className="w-[95%] m-auto p-3 rounded-3xl mt-6">
-          <h2 className="font-semibold text-center text-[#2699f7]">
+          <h2 className="font-semibold text-center text-[#ef476f]">
             QUELQUES TÉMOIGNAGES
           </h2>
         </div>
@@ -384,7 +376,7 @@ EN LIGNE
 
       <footer className='lg:w-4/12 lg:m-auto'>
         <div className="w-[90%] m-auto text-center text-white text-sm">
-          <div className="text-[#2699f7] text-center text-xl font-medium my-2">
+          <div className="text-[#ef476f] text-center text-xl font-medium my-2">
             Tu veux nous rejoindre ?
           </div>
           <div>
@@ -398,7 +390,7 @@ EN LIGNE
 
         <div
           onClick={show}
-          className="bg-gradient-to-r  from-[#2699f7] to-[#2699f7] border-b-4 border-[#1c73bb] text-white text-lg font-medium py-4 w-[90%] m-auto flex items-center justify-center rounded-2xl my-2 space-x-4"
+          className="shake bg-gradient-to-r  from-[#ef476f] to-[#ef476f] border-b-4 border-[#c43b5b] text-white text-lg font-medium py-4 w-[90%] m-auto flex items-center justify-center rounded-3xl my-2 space-x-4"
         >
           {/* <img alt={prenom} src="/icons/chat.webp" className="w-8" /> */}
           <div>{` S'INSCRIRE SUR MYCLUB `}</div>
